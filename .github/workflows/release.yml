@@ -60,7 +60,7 @@ jobs:
           fetch-depth: 0
       -
         name: Retrieve Binaries
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: binaries
           path: dist/bin/
@@ -92,7 +92,7 @@ jobs:
     steps:
       -
         name: Retrieve Package
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: package
           path: dist/macos/
